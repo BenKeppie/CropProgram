@@ -29,11 +29,11 @@ class Crop:
         elif self._growth>10:
             self._status="Mature"
         elif self._growth>5:
-            self._status="Young"
+            self._status="Youngish"
         elif self._growth>0:
-            self._status="Seedling"
+            self._status="Young"
         elif self._growth==0:
-            self._status="Seed"
+            self._status="Baby"
         
 
     def grow(self,light,water):
