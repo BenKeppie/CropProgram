@@ -1,9 +1,9 @@
 import random
-from CropClass import *
+
 
 class Animal:
     """A class to represent animals"""
-    def __init__(self):
+    def __init__(self,growth_rate,food_need,water_need):
         self._weight=0
         self._days_growing=0
         
@@ -19,7 +19,7 @@ class Animal:
     def needs(self):
         return{"Food Need":self._food_need,"Water Need":self._water_need}
     def report(self):
-        return {"Type":self._type,"Status":self._status,"Weight":self._weight,"Days Growing":self._days_growing}
+        return {"Type":self._type,"Status":self._status,"Weight":self._weight,"Days Growing":self._days_growing, "Name":self._name}
 
     def update_status(self):
         if self._weight>15:
