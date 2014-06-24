@@ -3,7 +3,7 @@ import random
 
 class Animal:
     """A class to represent animals"""
-    def __init__(self,growth_rate,food_need,water_need):
+    def __init__(self,growth_rate,food_need,water_need,name):
         self._weight=0
         self._days_growing=0
         

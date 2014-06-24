@@ -306,3 +306,9 @@ def remove_animal_from_field(field):
 
 if __name__ == "__main__":
     new_field = Field(5,2)
+    new_field.plant_crop(Wheat())
+    new_field.plant_crop(Potato())
+    new_field.add_animal(Sheep("Shaun"))
+    new_field.add_animal(Cow("Jim"))
+    display_crops(new_field._crops)
+    display_animals(new_field._animals)

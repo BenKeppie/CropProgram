@@ -2,7 +2,7 @@ from AnimalClass import *
 
 class Sheep(Animal):
     """A representation of a sheep"""
-    def __init__(self):
+    def __init__(self,name):
         super().__init__(1,3,3)
         self._type="Sheep"
         
