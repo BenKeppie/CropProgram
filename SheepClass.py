@@ -3,8 +3,9 @@ from AnimalClass import *
 class Sheep(Animal):
     """A representation of a sheep"""
     def __init__(self,name):
-        super().__init__(1,3,3)
+        super().__init__(1,3,3,name)
         self._type="Sheep"
+        self._name=name
         
 
     def grow(self,food,water):
@@ -22,6 +23,6 @@ class Sheep(Animal):
 
 
 if __name__=="__main__":
-    sheep=sheep()
+    sheep=sheep("Ben")
     
     

@@ -2,9 +2,10 @@ from AnimalClass import *
 
 class Cow(Animal):
     """A representation of a sheep"""
-    def __init__(self):
-        super().__init__(1,5,5)
+    def __init__(self,name):
+        super().__init__(1,5,5,name)
         self._type="Cow"
+        self._name=name
 
     def grow(self,food,water):
         if water>=self._water_need and food>= self._food_need:
